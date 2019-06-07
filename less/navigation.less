@@ -1,1 +1,35 @@
 // Navigation code here
+nav {
+  position: fixed;
+  top: 0;
+  width: 1000px;
+  background-color: rgb(241, 241, 241);
+  opacity: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  .displayFlex(column, flex-start, center);
+
+  h1{
+    font-size: 4rem;
+    font-family: 'Russo One', sans-serif;
+    color: #232938;
+    padding: 15px;
+  }
+
+  div{
+    .displayFlex(row, space-around, flex-start);
+
+    a{
+      font-weight: bold;
+      text-decoration: none;
+      color: #232938;
+      justify-content: space-around;
+      font-size: 1.5rem;
+      padding: 5px 18px 10px 18px;
+    }
+  }
+
+  @media @mobile{
+    width: 500px;
+  }
+}
