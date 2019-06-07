@@ -166,6 +166,7 @@ nav {
   margin: auto;
   display: flex;
   flex-direction: column;
+  justify-content: none;
   align-items: center;
 }
 nav h1 {
@@ -176,7 +177,9 @@ nav h1 {
 }
 nav div {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: none;
 }
 nav div a {
   font-weight: bold;

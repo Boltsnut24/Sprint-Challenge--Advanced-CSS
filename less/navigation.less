@@ -3,9 +3,7 @@ nav {
   width: 1000px;
   background-color: rgb(241, 241, 241);
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  .displayFlex(column, none, center);
   h1{
     font-size: 4rem;
     font-family: 'Russo One', sans-serif;
@@ -14,8 +12,8 @@ nav {
   }
 
   div{
-    display: flex;
-    justify-content: space-around;
+    .displayFlex(row, space-around, none);
+
     a{
       font-weight: bold;
       text-decoration: none;

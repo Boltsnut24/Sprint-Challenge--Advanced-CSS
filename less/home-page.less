@@ -58,8 +58,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .display(row, center, none);
 
     .walk-text {
       width: 50%;
@@ -109,8 +108,7 @@
     }
 
     .walk{
-        display: flex;
-        flex-direction: column-reverse;
+        .displayFlex(column-reverse, none, none);
         padding: 10px;
         margin-top: 10px;
     
