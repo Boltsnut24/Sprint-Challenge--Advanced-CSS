@@ -4,6 +4,7 @@
   font-weight: bold;
 
   .intro {
+    margin-top: 100px;
 
     h2 {
       padding: 15px;
@@ -58,8 +59,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    .display(row, center, none);
-
+    .displayFlex(row, center, flex-start);
     .walk-text {
       width: 50%;
 
@@ -78,6 +78,8 @@
       .btn:hover {
         color: #232938;
         background-color: white;
+        animation-name: pulse;
+        animation-duration: 2s;
       }
  
     }
@@ -108,7 +110,7 @@
     }
 
     .walk{
-        .displayFlex(column-reverse, none, none);
+        .displayFlex(column-reverse, flex-start, flex-start);
         padding: 10px;
         margin-top: 10px;
     
@@ -127,9 +129,18 @@
         .btn:hover {
           color: #232938;
           background-color: white;
+          animation-name: pulse;
+          animation-duration: 1s;
         }
       }
     }
   }
 
 }// home
+
+@keyframes pulse{
+  from {
+    .signUp(90%, #eba439, white);
+  }
+  to{.signUp(100%, #0032b1, white);}
+}

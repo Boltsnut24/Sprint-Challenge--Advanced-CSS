@@ -1,9 +1,14 @@
 // Navigation code here
 nav {
+  position: fixed;
+  top: 0;
   width: 1000px;
   background-color: rgb(241, 241, 241);
-  margin: auto;
-  .displayFlex(column, none, center);
+  opacity: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  .displayFlex(column, flex-start, center);
+
   h1{
     font-size: 4rem;
     font-family: 'Russo One', sans-serif;
@@ -12,7 +17,7 @@ nav {
   }
 
   div{
-    .displayFlex(row, space-around, none);
+    .displayFlex(row, space-around, flex-start);
 
     a{
       font-weight: bold;
