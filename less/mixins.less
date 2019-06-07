@@ -1,12 +1,17 @@
 // Mixins Here
-.signUp(@width, @backColor){
+.signUp(@width, @backColor, @color){
   background-color: @backColor;
   width: @width;
   text-align: center;
   font-size: 1.8rem;
-  color: white;
+  color: @color;
   border-radius: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: bold;
+  
+  @media @mobile{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }

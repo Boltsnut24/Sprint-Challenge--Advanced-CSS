@@ -186,6 +186,11 @@ nav div a {
   font-size: 1.5rem;
   padding: 5px 18px 10px 18px;
 }
+@media (max-width: 500px) {
+  nav {
+    width: 500px;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -205,6 +210,9 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .intro img {
+  width: 100%;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -215,6 +223,14 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -252,6 +268,16 @@ footer {
   padding-bottom: 10px;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  color: #232938;
+  background-color: white;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -260,4 +286,52 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 500px;
+  }
+  .home .space-images {
+    width: 95%;
+  }
+  .home .space-images img {
+    width: 95%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+  }
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .home .walk .walk-img {
+    width: 95%;
+    margin: 5px;
+  }
+  .home .walk .walk-text {
+    width: 95%;
+    margin: 5px;
+  }
+  .home .walk .walk-text .btn {
+    background-color: #232938;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  .home .walk .walk-text .btn:hover {
+    color: #232938;
+    background-color: white;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
